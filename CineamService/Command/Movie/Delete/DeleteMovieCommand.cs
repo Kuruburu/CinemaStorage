@@ -1,5 +1,4 @@
-﻿
-namespace CineamService.Command.Delete
+﻿namespace CineamService.Command.Movie.Delete
 {
     public sealed class DeleteMovieCommand : ICommand
     {

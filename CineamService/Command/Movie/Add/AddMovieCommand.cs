@@ -1,5 +1,4 @@
-﻿
-namespace CineamService.Command.Add
+﻿namespace CineamService.Command.Movie.Add
 {
     public sealed class AddMovieCommand : ICommand
     {

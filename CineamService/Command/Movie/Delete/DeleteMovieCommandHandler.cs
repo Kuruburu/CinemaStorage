@@ -1,7 +1,6 @@
-﻿
-using SzkolenieTechniczneCinemaStorage.Repositories;
+﻿using SzkolenieTechniczneCinemaStorage.Repositories;
 
-namespace CineamService.Command.Delete
+namespace CineamService.Command.Movie.Delete
 {
     public sealed class DeleteMovieCommandHandler : ICommandHandler<DeleteMovieCommand>
     {

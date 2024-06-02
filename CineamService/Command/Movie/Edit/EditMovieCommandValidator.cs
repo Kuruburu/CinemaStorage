@@ -5,11 +5,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CineamService.Command.Edit
+namespace CineamService.Command.Movie.Edit
 {
     internal class EditMovieCommandValidator : AbstractValidator<EditMovieCommand>
     {
-        public EditMovieCommandValidator() 
+        public EditMovieCommandValidator()
         {
             RuleFor(x => x.Id).NotEmpty();
             RuleFor(x => x.Name).NotEmpty();

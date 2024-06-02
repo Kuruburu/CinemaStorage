@@ -1,5 +1,4 @@
-﻿
-namespace CineamService.Command.Edit
+﻿namespace CineamService.Command.Movie.Edit
 {
     public sealed class EditMovieCommand : ICommand
     {

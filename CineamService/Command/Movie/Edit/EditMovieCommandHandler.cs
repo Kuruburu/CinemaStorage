@@ -4,9 +4,10 @@ using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CineamService.Command.Edit;
 using SzkolenieTechniczneCinemaStorage.Repositories;
 
-namespace CineamService.Command.Edit
+namespace CineamService.Command.Movie.Edit
 {
     public sealed class EditMovieCommandHandler
     {
@@ -18,7 +19,7 @@ namespace CineamService.Command.Edit
         public Result Hande(EditMovieCommand command)
         {
             var validationResult = new EditMovieCommandValidator().Validate(command);
-            if(validationResult.IsValid == false)
+            if (validationResult.IsValid == false)
             {
                 return Result.Fail(validationResult);
             }
