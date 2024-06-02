@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzkolenieTechniczneCinemaStorage", "SzkolenieTechniczneCinemaStorage\SzkolenieTechniczneCinemaStorage.csproj", "{47E7E3F2-80DF-4B01-8EBE-A013DB66B985}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SzkolenieTechniczneCinemaStorage", "SzkolenieTechniczneCinemaStorage\SzkolenieTechniczneCinemaStorage.csproj", "{47E7E3F2-80DF-4B01-8EBE-A013DB66B985}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CineamService", "CineamService\CineamService.csproj", "{C7FD502F-6973-4A94-A257-8B06664D48B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CineamService", "CineamService\CineamService.csproj", "{C7FD502F-6973-4A94-A257-8B06664D48B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SzkolenieTechniczne.Cinema", "SzkolenieTechniczne.Cinema\SzkolenieTechniczne.Cinema.csproj", "{1437276F-0B97-4A8B-8F14-C62C409B473F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C7FD502F-6973-4A94-A257-8B06664D48B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7FD502F-6973-4A94-A257-8B06664D48B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7FD502F-6973-4A94-A257-8B06664D48B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1437276F-0B97-4A8B-8F14-C62C409B473F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1437276F-0B97-4A8B-8F14-C62C409B473F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1437276F-0B97-4A8B-8F14-C62C409B473F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1437276F-0B97-4A8B-8F14-C62C409B473F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

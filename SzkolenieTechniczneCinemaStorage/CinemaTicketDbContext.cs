@@ -18,7 +18,7 @@ namespace SzkolenieTechniczneCinemaStorage
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(@"Server = 10.200.2.28; Database = cinema-dev-w67739; User Id = stud; Password =wsiz;",
+            options.UseSqlServer(@"Server = 10.200.2.28; Database=cinema-dev-w67739; User Id=stud; Password=wsiz;",
                 x => x.MigrationsHistoryTable("__EFMigrationsHistory", "Cinema"));
         }
 
