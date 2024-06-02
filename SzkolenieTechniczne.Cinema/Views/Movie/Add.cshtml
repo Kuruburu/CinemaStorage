@@ -1,0 +1,35 @@
+﻿@model CineamService.Command.Movie.Add.AddMovieCommand
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h2>Dodaj nowy film</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label asp-for="Name">Nazwa</label>
+        <input asp-for="Name"type="text" class="form-control"/>
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="from-group">
+        <label asp-for="Description">Opis</label>
+        <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="from-group">
+        <label asp-for="Year">Rok</label>
+        <input asp-for="Year" class="form-control">
+        <span asp-validation-for="Year" class="text-danger"></span>
+    </div>
+    <div class="from-group">
+        <label asp-for="SeanceTime">Czas trwania</label>
+        <input asp-for="SeanceTime" class="form-control">
+        <span asp-validation-for="SeanceTime" class="text-danger"></span>
+    </div>
+    <div class="from-group">
+        <label asp-for="CategoryId">Kategoria</label>
+        <select asp-for="CategoryId" asp-items="ViewBag.CategoryList" class="form-control"></select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-outline-primary float-right">Zapisz</button>
+</form>

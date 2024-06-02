@@ -14,8 +14,4 @@
     <ProjectReference Include="..\SzkolenieTechniczneCinemaStorage\SzkolenieTechniczneCinemaStorage.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Query\" />
-  </ItemGroup>
-
 </Project>

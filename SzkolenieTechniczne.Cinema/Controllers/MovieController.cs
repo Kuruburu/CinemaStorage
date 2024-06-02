@@ -1,21 +1,29 @@
 ﻿using CineamService.Command.Movie.Add;
+using CineamService.Query.Dtos;
 using Microsoft.AspNetCore.Mvc;
 using SzkolenieTechniczneCinemaStorage.Repositories;
 
 namespace SzkolenieTechniczne.Cinema.Controllers
 {
-    public class MovieConroller : Controller
+    public class MovieController : Controller
     {
-        private readonly IMovieRepository _movieRepository;
+        private static List<MovieDto> _movies = new List<MovieDto>()
+        {
+            new MovieDto("Terminator", 2),
+            new MovieDto("Rambo", 2)
+        };
 
-        public MovieConroller(IMovieRepository movieRepository)
+        public MovieController() { }
+        //private readonly IMovieRepository _movieRepository;
+
+        /*public MovieConroller(IMovieRepository movieRepository)
         {
             _movieRepository = movieRepository;
-        }
+        }*/
         public IActionResult Index()
         {
             //var handler = new GetAllMoviesQueryHandler(_movieRepository);
-            return View();
+            return View(_movies);
         }
 
         public IActionResult Add()
@@ -26,6 +34,7 @@ namespace SzkolenieTechniczne.Cinema.Controllers
         [HttpPost]
         public IActionResult Add(AddMovieCommand command)
         {
+            _movies.Add(new MovieDto(command.Name, 1));
             return RedirectToAction("Index");
         }
 
