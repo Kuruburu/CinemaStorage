@@ -1,4 +1,5 @@
 ﻿using SzkolenieTechniczneCinemaStorage.Repositories;
+using SzkolenieTechniczneCinemaStorage.Entities;
 
 namespace CineamService.Command.Movie.Add
 {
@@ -25,8 +26,7 @@ namespace CineamService.Command.Movie.Add
             {
                 return Result.Fail("This Movie already exists");
             }
-
-            var movie = new SzkolenieTechniczneCinemaStorage.Entities.Movie(command.Name, command.Year, command.SeanceTime, command.Description, command.CategoryId);
+            var movie = new SzkolenieTechniczneCinemaStorage.Entities.Movie(command.CategoryId, command.Name, command.Year, command.SeanceTime, command.Description);
             _repository.AddMovie(movie);
 
             return Result.OK();

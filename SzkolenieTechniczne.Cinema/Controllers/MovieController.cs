@@ -14,15 +14,16 @@ namespace SzkolenieTechniczne.Cinema.Controllers
         };
 
         public MovieController() { }
-        //private readonly IMovieRepository _movieRepository;
+        private readonly IMovieRepository _movieRepository;
 
-        /*public MovieConroller(IMovieRepository movieRepository)
+        public MovieController(IMovieRepository movieRepository)
         {
             _movieRepository = movieRepository;
-        }*/
+        }
         public IActionResult Index()
         {
             //var handler = new GetAllMoviesQueryHandler(_movieRepository);
+            //var query = new GetAll
             return View(_movies);
         }
 

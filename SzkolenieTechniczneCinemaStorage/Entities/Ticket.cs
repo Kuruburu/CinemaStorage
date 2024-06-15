@@ -5,11 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using SzkolenieTechniczneCinemaStorage.Common;
 
 namespace SzkolenieTechniczneCinemaStorage.Entities
 {
     [Table("Tickets", Schema = "Cinema")]
-    public class Ticket
+    public class Ticket : BaseEntity
     {
         protected Ticket() { }
         public Ticket(string email, int numberOfTickets) 

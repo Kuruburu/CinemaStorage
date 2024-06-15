@@ -28,5 +28,6 @@ namespace SzkolenieTechniczneCinemaStorage.Entities
         public Movie? Movie { get; set; }
 
         public ICollection<Seance> Seances { get; set; }
+        public ICollection<Ticket> Tickets { get; set; }
     }
 }

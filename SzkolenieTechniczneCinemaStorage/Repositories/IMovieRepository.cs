@@ -17,7 +17,7 @@ namespace SzkolenieTechniczneCinemaStorage.Repositories
 
         void AddSeance(Seance seance);
         void BuyTicket(Ticket ticket);
-        List<Seance> GetSeancesByMovieId();
+        List<Seance> GetSeancesByMovieId(long movieId);
         Movie GetSeanceDetails(long movieId);
     }
 }

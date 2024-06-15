@@ -8,8 +8,9 @@ namespace SzkolenieTechniczneCinemaStorage.Entities
     public class Movie : BaseEntity
     {
         protected Movie() { }
-        public Movie(string name, int year, int seanceTime, string description, long categoryId) 
+        public Movie(long movieCategoryId, string name, int year, int seanceTime, string description) 
         {
+            MovieCategoryId = movieCategoryId;
             Name = name;
             Year = year;
             TimeMinutes = seanceTime;
@@ -18,6 +19,10 @@ namespace SzkolenieTechniczneCinemaStorage.Entities
             IsActive = true;
         }
 
+        [Required]
+        public long MovieCategoryId { get; set; }
+        [Required]
+        public MovieCategory MovieCategory { get; set; }
         [Required]
         [MinLength(3)]
         [MaxLength(128)]
